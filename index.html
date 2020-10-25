@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music PLayer</title>
+    <script src="https://kit.fontawesome.com/7b21ad7a06.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="player">
+        <div class="container">
+            <!-- //TOP ICONS -->
+            <div class="icons">
+                <a href="#"><i class="fa fa-bars"></i></a>
+                <h1>MY MUSIC</h1>
+                <a href="#"><i class="fa fa-heart"></i></a>
+            </div>
+
+            <!-- //IMG -->
+            <div class="img">
+                <img src="cover1.png" alt="">
+            </div>
+
+            <!-- //TITLE -->
+            <div class="title">
+                <h1>WATERMELON SUGAR</h1>
+                <p>Fine Line - Harry Styles</p>
+            </div>
+
+            <!-- //TIME -->
+            <div class="time">
+                00:00
+                <span></span>
+                00:00
+            </div>
+        
+
+            <!-- //SEEK BAR -->
+            <div class="seek">
+                <div class="fill"></div>
+            </div>
+        </div>
+
+            <!-- //BUTTONS -->
+            <div class="audio-btns">
+                <div class="play-btns">
+                    <a href="#" onclick="prevAudio()"><i class="fa fa-backward"></i></a>
+                    <a href="#" class="play-pause" onclick="togglePlayPause()"><i class="fa fa-play"></i></a>
+                    <a href="#" onclick="nextAudio()"><i class="fa fa-forward"></i></a>
+                </div>
+                <div class="repeat-btns">
+                    <a href="#"><i class="fa fa-retweet"></i></a>
+                    <span>
+                        <button class="decrease" onclick="decreaseVolume()">-</button>
+                        <a href="#" class="volume-up"><i class="fa fa-volume-up"></i></a>
+                        <button class="increase" onclick="increaseVolume()">+</button>
+                    </span>
+                    <a href="#"><i class="fa fa-random"></i></a>
+                </div>
+            </div>
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
